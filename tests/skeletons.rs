@@ -811,3 +811,14 @@ fn check(actual: &str, expect: Expect) {
     let actual = actual.to_string();
     expect.assert_eq(&actual);
 }
+
+//
+// Add a test using
+// ```toml
+// [source.crates-io]
+// replace-with = "vendored-sources"
+//
+// [source.vendored-sources]
+// directory = "vendor"
+// ```
+//
